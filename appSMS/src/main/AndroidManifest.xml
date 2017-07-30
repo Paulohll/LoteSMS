@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.herprogramacion.trickmarket">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.TrickMarket">
+        <activity
+            android:name="cepa.lote.lote.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="cepa.lote.lote.EnvioSMSBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name="cepa.lote.lote.RecepcionSMSBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+    </application>
+
+</manifest>

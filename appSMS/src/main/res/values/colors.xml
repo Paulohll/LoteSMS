@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="window_background">#EEEEEE</color>
+    <color name="accent">#FF6373</color>
+
+    <color name="primaryColor">#8BC3E4</color>
+    <color name="primaryDarkColor">#8792F1</color>
+    <color name="accentColor">#E8A5A7</color>
+</resources>
